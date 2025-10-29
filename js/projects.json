@@ -1,0 +1,112 @@
+{
+  "sites": [
+   {
+        "id": 1,
+        "link": "https://andrey-dudkin.github.io/moveon-project/",
+        "img": "./img/images/site-img-01.jpg",
+        "title": "Moveon - Найди свою компанию друзей.",
+        "description": "С помощью приложения Moveon найди свою компанию для походов в кафе, бар или для прогулок по городу."
+    },
+    {
+        "id": 2,
+        "link": "https://andrey-dudkin.github.io/dentistry-clinic-dental-tooth-project/",
+        "img": "./img/images/site-img-02.jpg",
+        "title": "Dental Tooth - Стоматологическая клиника.",
+        "description": "Безболезненное лечение зубов."
+    },
+    {
+        "id": 3,
+        "link": "https://andrey-dudkin.github.io/artistry-beauty-salon-project/",
+        "img": "./img/images/site-img-03.jpg",
+        "title": "Artistry - Маникюр как искусство.",
+        "description": "Сайт салона красоты."
+    },
+    {
+        "id": 4,
+        "link": "https://andrey-dudkin.github.io/nikason-brand-project/index.html",
+        "img": "./img/images/site-img-04.jpg",
+        "title": "Nikason brand - Столярная мастерская.",
+        "description": "Изготовление и реставрация мебели."
+    },
+    {
+        "id": 5,
+        "link": "https://andrey-dudkin.github.io/ito-bd-wireless-charging-stands-project",
+        "img": "./img/images/site-img-05.jpg",
+        "title": "Ito bd - Wireless charging stands.",
+        "description": "Your mobile chargers are our baby."
+    },
+    {
+        "id": 6,
+        "link": "https://andrey-dudkin.github.io/glider-for-mom-project/",
+        "img": "./img/images/site-img-06.jpg",
+        "title": "Планировщик.",
+        "description": "Планер для мам и будущих мам."
+    },
+    {
+        "id": 7,
+        "link": "https://andrey-dudkin.github.io/traveland-project/",
+        "img": "./img/images/site-img-07.jpg",
+        "title": "Railtrips To Here, There And Everywhere!",
+        "description": "We all wish to start our year the best way possible and also according to a common belief if you have a great start to your."
+    },
+    {
+        "id": 8,
+        "link": "https://andrey-dudkin.github.io/car-luxury-project/",
+        "img": "./img/images/site-img-08.jpg",
+        "title": "Luxury car detailing.",
+        "description": "Experience the prestige of a professionally detailed car, radiating elegance and refinement at every turn."
+    },
+    {
+        "id": 9,
+        "link": "https://andrey-dudkin.github.io/feather-project/",
+        "img": "./img/images/site-img-09.jpg",
+        "title": "Curated and Convenient.",
+        "description": "We've built our offerings on the principle that everyone deserves high-quality design without the high cost.."
+    },
+    {
+        "id": 10,
+        "link": "https://andrey-dudkin.github.io/bonus-project/",
+        "img": "./img/images/site-img-10.jpg",
+        "title": "Project 'Bonus'.",
+        "description": "Sell your home without missing out on its future worth."
+    }
+  ],
+  "apps": [
+    {
+        "id": 1,
+        "link": "https://andrey-dudkin.github.io/app-virtual-keyboard/",
+        "img": "./img/images/app-img-01.jpg",
+        "title": "Виртуальная клавиатура.",
+        "description": "Простая виртуальная клавиатура."
+    },
+    {
+        "id": 2,
+        "link": "https://andrey-dudkin.github.io/app-online-calc/",
+        "img": "./img/images/app-img-02.jpg",
+        "title": "Онлайн калькулятор.",
+        "description": "Это простое веб-приложение для быстрого решения базовых  математических задач."
+    },
+    {
+        "id": 3,
+        "link": "https://andrey-dudkin.github.io/notes-app/",
+        "img": "./img/images/app-img-03.jpg",
+        "title": "Приложение «Заметки»",
+        "description": "Интерактивное приложение для создания, редактирования и хранения заметок в вашем браузере."
+    },
+    {
+        "id": 4,
+        "link": "https://andrey-dudkin.github.io/app-gallery-images/",
+        "img": "./img/images/app-img-04.jpg",
+        "title": "Gallery images.",
+        "description": "Dozens of free images."
+    },
+    {
+        "id": 5,
+        "link": "https://andrey-dudkin.github.io/app-weather/",
+        "img": "./img/images/app-img-05.jpg",
+        "title": "App weather.",
+        "description": "Check the weather in your city."
+    }
+  ]
+}
+ 

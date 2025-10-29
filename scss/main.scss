@@ -1,0 +1,248 @@
+@import './blocks/./_index.scss';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  // *base styles
+  --main-font: 'Inter', sans-serif;
+  --width-container: 1170px;
+  --padding-container: 15px;
+  --border-default: 3px solid transparent;
+  --border-radius: 30px;
+
+  // *main colors
+  --main-color: #000000;
+  --accent-color: #00adb5;
+  --bg-body: #f2f5f9;
+  --icon-color: #ffffff;
+
+  // *buttons states
+  --btn-text-color: #ffffff;
+  --btn-focus: #348397;
+
+  --ui-button-color-default-hover: #ddf7f9;
+  --ui-button-color-default-active: #bfecf0;
+
+  --ui-button-color-accent: #00adb5;
+  --ui-button-color-accent-hover: #0b8f96;
+  --ui-button-color-accent-active: #10484a;
+
+  // *header
+  --bg-navbar: rgba(255, 255, 255, 1);
+  --navbar-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+  --btn-toggle-theme-color: #dadada;
+  --toggle-theme-icon-default-color: #000000;
+  --toggle-theme-icon-active-color: #ffffff;
+
+  // *sections
+  --bg-section: #ffffff;
+
+  // *section technologies
+  --technologies-default-bg-color: #b7b4b4;
+  --html-svg: #e44f26;
+  --html-svg-two: #ebebeb;
+  --html-svg-three: #ffffff;
+  --scss-svg: #cf649a;
+  --js-svg: #f0db4f;
+  --js-svg-two: #323330;
+  --git-svg: #dd4c35;
+  --git-svg-two: #ffffff;
+
+  // *section projects
+  --project-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+  --project-border-color: #dbdbdb;
+  --project-overlay: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%);
+  --project-text: #ffffff;
+  --project-arrow: #ffffff;
+
+  // *footer
+  --bg-footer: #ffffff;
+}
+.dark-theme {
+  // *main colors
+  --main-color: #ffffff;
+  --accent-color: #00adb5;
+  --bg-body: #0d0d0d;
+  --icon-color: #ffffff;
+
+  // *buttons states
+  --btn-text-color: #ffffff;
+  --btn-focus: #348397;
+
+  --ui-button-color-default-hover: #ddf7f9;
+  --ui-button-color-default-active: #bfecf0;
+
+  --ui-button-color-accent: #00adb5;
+  --ui-button-color-accent-hover: #0b8f96;
+  --ui-button-color-accent-active: #10484a;
+
+  // *header
+  --bg-navbar: rgba(22, 22, 22, 1);
+  --navbar-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+  --btn-toggle-theme-color: #2c2d2d;
+  --toggle-theme-icon-default-color: #000000;
+  --toggle-theme-icon-active-color: #ffffff;
+
+  // *sections
+  --bg-section: #161616;
+
+  // *section technologies
+  --technologies-default-bg-color: #b7b4b4;
+  --html-svg: #e44f26;
+  --html-svg-two: #ebebeb;
+  --html-svg-three: #ffffff;
+  --scss-svg: #cf649a;
+  --js-svg: #f0db4f;
+  --js-svg-two: #323330;
+  --git-svg: #dd4c35;
+  --git-svg-two: #ffffff;
+
+  // *section projects
+  --project-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+  --project-border-color: #333333;
+  --project-overlay: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 50%);
+  --project-text: #ffffff;
+  --project-arrow: #ffffff;
+
+  // *footer
+  --bg-footer: #161616;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: transparent;
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: var(--main-color);
+  background-color: var(--bg-body);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: calc(var(--width-container) + var(--padding-container) * 2);
+  margin: 0 auto;
+  padding-inline: var(--padding-container);
+}
+.container-inner {
+  display: flex;
+  gap: 15px;
+  padding: 30px 0;
+}
+.main-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.projects,
+.technologies {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-section);
+  border-radius: var(--border-radius);
+  padding: clamp(28px, 5vw, 48px) 10px;
+}
+.projects__contauner,
+.technologies__content {
+  padding-top: clamp(18px, 3vw, 28px);
+}
+
+.btn-page {
+  color: var(--btn-text-color);
+  background-color: var(--ui-button-color-accent);
+  border-radius: var(--border-radius);
+  border: var(--border-default);
+  transition: background-color ease 0.2s;
+  &:focus {
+    border-color: var(--btn-focus);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var(--ui-button-color-accent-hover);
+    }
+  }
+  &:active {
+    background-color: var(--ui-button-color-accent-active);
+  }
+}
+.section-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: clamp(8px, 4vw, 18px);
+  align-items: center;
+}
+.section-title__text {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: clamp(24px, 5vw, 34px);
+  line-height: 150%;
+  color: var(--main-color);
+}
+.section-title__span {
+  font-family: 'CourierNewPS', serif;
+  color: var(--accent-color);
+}
+.section-title__description {
+  font-size: clamp(16px, 4vw, 18px);
+  line-height: 150%;
+  font-weight: 500;
+  text-align: center;
+}
+
+// *media
+
+@media (max-width: 976px) {
+  // *section content
+  .container-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content {
+    width: 100%;
+  }
+
+  // *profile details
+  .profile-details {
+    width: 100%;
+  }
+}
+@media (max-width: 424px) {
+  // *projects
+  .project__text {
+    padding: 14px;
+  }
+}

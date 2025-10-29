@@ -1,0 +1,78 @@
+
+.technologies__content {
+  display: flex;
+  justify-content: space-around;
+  gap: clamp(24px, 3vw, 28px);
+  flex-wrap: wrap;
+}
+.technology {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.technology__svg {
+  margin-bottom: 8px;
+  fill: var(--technologies-default-bg-color);
+}
+.technology__svg-html {
+  transition: fill 0.2s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      fill: var(--html-svg);
+    }
+  }
+  &:active {
+    fill: var(--html-svg);
+  }
+}
+.technology__svg-html-icon-polygon {
+  fill: var(--html-svg-two);
+}
+.technology__svg-html-icon-number {
+  fill: var(--html-svg-three);
+}
+.technology__svg-scss {
+  height: 90px;
+  transition: fill 0.2s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      fill: var(--scss-svg);
+    }
+  }
+  &:active {
+    fill: var(--scss-svg);
+  }
+}
+.technology__svg-js {
+  transition: fill 0.2s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      fill: var(--js-svg);
+    }
+  }
+  &:active {
+    fill: var(--js-svg);
+  }
+}
+.technology__svg-js-icon {
+  fill: var(--js-svg-two);
+}
+.technology__svg-git {
+  transition: fill 0.2s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      fill: var(--git-svg);
+    }
+  }
+  &:active {
+    fill: var(--git-svg);
+  }
+}
+.technology__svg-git-icon {
+  fill: var(--git-svg-two);
+}
+.technology__text {
+  font-size: clamp(14px, 2vw, 18px);
+}

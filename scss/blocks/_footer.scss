@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+}
+.footer__container {
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-footer);
+  border-radius: var(--border-radius);
+}
+.copywriting {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  .copywriting__text {
+    font-size: 12px;
+  }
+  .copywriting__text-span {
+    text-transform: uppercase;
+  }
+}

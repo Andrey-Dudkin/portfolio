@@ -1,0 +1,65 @@
+.toggle-section {
+  width: 100%;
+  height: 88px;
+  background-color: var(--bg-section);
+  border-radius: var(--border-radius);
+  padding: 0 clamp(10px, 3vw, 50px);
+}
+.toggle-section__body {
+  position: relative;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  &::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50px;
+    background-color: var(--ui-button-color-accent);
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: left 0.2s ease;
+  }
+  &.toggle-section__btn--active.toggle-section__body::before {
+    left: 50%;
+  }
+}
+
+.toggle-section__btn {
+  width: clamp(120px, 50vw, 50%);
+  height: 50px;
+  color: var(--accent-color);
+  border-radius: 100px;
+  border: var(--border-default);
+  transition: background-color ease 0.2s;
+  &:focus {
+    border-color: var(--btn-focus);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var(--ui-button-color-default-hover);
+    }
+  }
+  &:active {
+    background-color: var(--ui-button-color-default-active);
+  }
+  &--active {
+    color: var(--btn-text-color);
+  }
+}
+.toggle-section__span {
+  position: relative;
+  z-index: 10;
+}
+.section-content {
+  display: none;
+}
+.section-content--active {
+  display: block;
+}

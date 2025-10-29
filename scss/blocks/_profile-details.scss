@@ -1,0 +1,57 @@
+.profile-details {
+  width: 40%;
+  min-height: 200px;
+  background-color: var(--bg-section);
+  border-radius: var(--border-radius);
+  padding: 50px 0;
+}
+.profile-details__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(14px, 2vw, 24px);
+}
+.profile-details__body-img {
+  width: 190px;
+  height: 190px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-details__img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+.profile-details__title {
+  font-weight: 700;
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 120%;
+  letter-spacing: -1.2px;
+}
+.profile-details__text {
+  font-weight: 500;
+  font-size: clamp(16px, 3vw, 26px);
+  line-height: 150%;
+}
+.profile-details__text-span {
+  font-weight: 700;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+.profile-details__link-tegram {
+  width: 200px;
+  min-width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+.profile-details__telegram-icon {
+  width: clamp(16px, 3vw, 22px);
+  height: clamp(16px, 3vw, 22px);
+  fill: var(--icon-color);
+}
